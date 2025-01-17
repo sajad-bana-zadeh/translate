@@ -1,0 +1,720 @@
+1
+00:00:00,000 --> 00:00:00,000
+Hello guys.
+
+2
+00:00:00,000 --> 00:00:03,000
+So we are going to continue the discussion with respect to Python.
+
+3
+00:00:03,000 --> 00:00:06,000
+And in this video we are going to discuss about filter function.
+
+4
+00:00:06,000 --> 00:00:08,000
+Now what exactly is filter function.
+
+5
+00:00:08,000 --> 00:00:14,000
+So filter function constructs an iterator from elements of an iterable for which a function returns
+
+6
+00:00:14,000 --> 00:00:15,000
+true.
+
+7
+00:00:15,000 --> 00:00:19,000
+It is used to filter out items from a list based on a condition.
+
+8
+00:00:19,000 --> 00:00:26,000
+So finally, just to understand what this filter function do, it is used to filter out items from a
+
+9
+00:00:26,000 --> 00:00:29,000
+list or any iterable based on a condition.
+
+10
+00:00:29,000 --> 00:00:35,000
+Okay, so in order to make you understand, let me just go ahead and quickly, uh, write a code for
+
+11
+00:00:35,000 --> 00:00:35,000
+you.
+
+12
+00:00:35,000 --> 00:00:37,000
+So here I'm going to create a definition.
+
+13
+00:00:37,000 --> 00:00:43,000
+Let's say this is my function which will tell whether a number is, uh, even or odd.
+
+14
+00:00:43,000 --> 00:00:44,000
+Right.
+
+15
+00:00:44,000 --> 00:00:48,000
+Or let's say this particular number is just, uh, this function is just going to check whether the
+
+16
+00:00:48,000 --> 00:00:50,000
+number is even and it is just going to return true or false.
+
+17
+00:00:50,000 --> 00:00:52,000
+So here if I'm giving num okay.
+
+18
+00:00:52,000 --> 00:00:55,000
+And let's say that I'm going to write my condition.
+
+19
+00:00:55,000 --> 00:01:00,000
+If num percentile two is double equal to zero then what we are going to do we are just going to return
+
+20
+00:01:00,000 --> 00:01:01,000
+true.
+
+21
+00:01:01,000 --> 00:01:01,000
+Right.
+
+22
+00:01:01,000 --> 00:01:02,000
+So perfect.
+
+23
+00:01:02,000 --> 00:01:03,000
+This works absolutely fine.
+
+24
+00:01:03,000 --> 00:01:05,000
+We have seen this kind of function a lot.
+
+25
+00:01:05,000 --> 00:01:08,000
+So now if I just go ahead and give my 24.
+
+26
+00:01:08,000 --> 00:01:12,000
+So it is just going to give me true because this is obviously a true number.
+
+27
+00:01:12,000 --> 00:01:16,000
+But let's say that now I have a list of elements.
+
+28
+00:01:16,000 --> 00:01:21,000
+And here I have like 123456789 ten something like this.
+
+29
+00:01:21,000 --> 00:01:29,000
+1112 okay, now I want to apply this same operation on top of this particular element.
+
+30
+00:01:29,000 --> 00:01:35,000
+And I want to just filter out which satisfies only this specific condition.
+
+31
+00:01:35,000 --> 00:01:35,000
+Right.
+
+32
+00:01:35,000 --> 00:01:37,000
+So now focus on the last statement.
+
+33
+00:01:37,000 --> 00:01:41,000
+It is used to filter out items from a list based on a condition.
+
+34
+00:01:41,000 --> 00:01:42,000
+Right.
+
+35
+00:01:42,000 --> 00:01:46,000
+So this is my condition and I want to filter out from this specific list.
+
+36
+00:01:46,000 --> 00:01:46,000
+Right.
+
+37
+00:01:46,000 --> 00:01:47,000
+So how do I do it.
+
+38
+00:01:47,000 --> 00:01:48,000
+Yes, I can actually do it.
+
+39
+00:01:48,000 --> 00:01:52,000
+I can just iterate through all this particular elements inside this even function.
+
+40
+00:01:52,000 --> 00:01:54,000
+And then I should be able to do it right.
+
+41
+00:01:54,000 --> 00:01:59,000
+I should be able to get true, you know, probably append it in another list and get the values.
+
+42
+00:01:59,000 --> 00:02:02,000
+But let's do this with the help of filter.
+
+43
+00:02:02,000 --> 00:02:02,000
+Okay.
+
+44
+00:02:02,000 --> 00:02:10,000
+Now in filter, if if you know about filter right filter usually takes first parameter as again function.
+
+45
+00:02:10,000 --> 00:02:12,000
+So in this case even is my function.
+
+46
+00:02:12,000 --> 00:02:14,000
+And the second parameter will be my list.
+
+47
+00:02:14,000 --> 00:02:15,000
+Okay.
+
+48
+00:02:16,000 --> 00:02:21,000
+Now what this filter does is that whatever condition I have written inside this particular function
+
+49
+00:02:21,000 --> 00:02:27,000
+only that will get applied into this, and the elements will be taken from the list only, which satisfies
+
+50
+00:02:27,000 --> 00:02:28,000
+this condition.
+
+51
+00:02:28,000 --> 00:02:28,000
+Right?
+
+52
+00:02:28,000 --> 00:02:32,000
+Which is returning true, only that elements will be taken out.
+
+53
+00:02:32,000 --> 00:02:38,000
+Okay, so here when I say filter even of list, and let me just go ahead and probably convert this into
+
+54
+00:02:38,000 --> 00:02:44,000
+a list, you will be able to see that I will be getting all the elements that are only even.
+
+55
+00:02:44,000 --> 00:02:44,000
+Right.
+
+56
+00:02:44,000 --> 00:02:50,000
+So this is a basic example to understand about filter function, right?
+
+57
+00:02:50,000 --> 00:02:54,000
+So it applies a kind of filter on the list that we specifically have.
+
+58
+00:02:54,000 --> 00:02:54,000
+Okay.
+
+59
+00:02:54,000 --> 00:02:57,000
+A very easy uh, with respect to this.
+
+60
+00:02:57,000 --> 00:02:59,000
+Now let's go ahead and see more examples.
+
+61
+00:02:59,000 --> 00:03:03,000
+In this time I'm going to take filter with a lambda function okay.
+
+62
+00:03:03,000 --> 00:03:06,000
+So lambda function and I will try to use the same thing.
+
+63
+00:03:06,000 --> 00:03:10,000
+Or let me just use some other things like let's say this is my number variable.
+
+64
+00:03:10,000 --> 00:03:14,000
+I have like 123456789 okay.
+
+65
+00:03:14,000 --> 00:03:21,000
+And then I will say hey do a filter and try to just take out greater than five okay.
+
+66
+00:03:22,000 --> 00:03:24,000
+Greater than five okay.
+
+67
+00:03:24,000 --> 00:03:25,000
+Try to create a filter, something like that.
+
+68
+00:03:25,000 --> 00:03:28,000
+From this particular list I should only get numbers that are greater than five.
+
+69
+00:03:28,000 --> 00:03:31,000
+So now I will just go ahead and write list.
+
+70
+00:03:31,000 --> 00:03:33,000
+I will go ahead and use filter function.
+
+71
+00:03:33,000 --> 00:03:35,000
+Now let me just go ahead and define my lambda function.
+
+72
+00:03:35,000 --> 00:03:36,000
+Right.
+
+73
+00:03:36,000 --> 00:03:37,000
+Lambda function will be very simple.
+
+74
+00:03:37,000 --> 00:03:44,000
+If I go ahead and write just lambda expression this will this will be my uh, argument or sorry uh,
+
+75
+00:03:44,000 --> 00:03:45,000
+yes argument.
+
+76
+00:03:45,000 --> 00:03:46,000
+And I'll be writing my expression.
+
+77
+00:03:46,000 --> 00:03:53,000
+That is x is greater than five and on which list I will basically get, uh, apply this entire thing
+
+78
+00:03:53,000 --> 00:03:53,000
+in my numbers.
+
+79
+00:03:53,000 --> 00:03:54,000
+Right.
+
+80
+00:03:54,000 --> 00:03:57,000
+So this entire function is going to get applied on this particular list.
+
+81
+00:03:57,000 --> 00:04:03,000
+Now, once I go ahead and print it, you will be able to see that I will only be getting the elements
+
+82
+00:04:03,000 --> 00:04:04,000
+greater than five.
+
+83
+00:04:04,000 --> 00:04:04,000
+Right.
+
+84
+00:04:04,000 --> 00:04:07,000
+So this is one amazing thing with respect to list.
+
+85
+00:04:07,000 --> 00:04:12,000
+And uh, here with a simple just logic how you are able to use filter.
+
+86
+00:04:12,000 --> 00:04:15,000
+Even in the previous video we saw about Lambda also.
+
+87
+00:04:15,000 --> 00:04:21,000
+Now I will show you filter operation with uh with multiple condition.
+
+88
+00:04:21,000 --> 00:04:21,000
+Okay.
+
+89
+00:04:21,000 --> 00:04:28,000
+So here I'm going to say filter with a lambda function, lambda function and multiple conditions.
+
+90
+00:04:28,000 --> 00:04:33,000
+So just to make you understand what all things are possible okay.
+
+91
+00:04:33,000 --> 00:04:35,000
+So multiple conditions.
+
+92
+00:04:35,000 --> 00:04:39,000
+Now as usual I'll take this numbers okay.
+
+93
+00:04:39,000 --> 00:04:40,000
+Right.
+
+94
+00:04:40,000 --> 00:04:44,000
+And let's say I will write a variable even.
+
+95
+00:04:44,000 --> 00:04:48,000
+And it should be even I'm writing to check okay.
+
+96
+00:04:48,000 --> 00:04:50,000
+Even and greater than five okay.
+
+97
+00:04:50,000 --> 00:04:54,000
+So this is my variable that I'm actually going to create two things I'm actually doing.
+
+98
+00:04:54,000 --> 00:04:54,000
+Okay.
+
+99
+00:04:54,000 --> 00:04:57,000
+First of all I will check whether the number is even or not.
+
+100
+00:04:57,000 --> 00:04:59,000
+Will filter out based on the number is even or not.
+
+101
+00:04:59,000 --> 00:04:59,000
+And.
+
+102
+00:04:59,000 --> 00:05:01,000
+It should be greater than five.
+
+103
+00:05:01,000 --> 00:05:03,000
+So in this I will again use list.
+
+104
+00:05:03,000 --> 00:05:05,000
+I will again use filter okay.
+
+105
+00:05:05,000 --> 00:05:11,000
+And along with that I will use my lambda x x colon greater than five okay.
+
+106
+00:05:11,000 --> 00:05:13,000
+So this is my one condition.
+
+107
+00:05:13,000 --> 00:05:15,000
+And I will go ahead and use one logical.
+
+108
+00:05:15,000 --> 00:05:20,000
+And so and operation over here I will use and this will be x percentile two or modulus two is double
+
+109
+00:05:20,000 --> 00:05:20,000
+equal to zero.
+
+110
+00:05:20,000 --> 00:05:22,000
+So these are my two conditions.
+
+111
+00:05:22,000 --> 00:05:23,000
+If it is getting satisfied.
+
+112
+00:05:23,000 --> 00:05:27,000
+And this will get applied to all my numbers list of numbers that is available over here.
+
+113
+00:05:28,000 --> 00:05:31,000
+So inside this lambda function what we are doing we are applying two expression.
+
+114
+00:05:31,000 --> 00:05:38,000
+One is x is greater than five and the other one is x modulus two uh is double equal to zero.
+
+115
+00:05:38,000 --> 00:05:40,000
+Right now if I go ahead and print.
+
+116
+00:05:40,000 --> 00:05:41,000
+So what it is going to do.
+
+117
+00:05:41,000 --> 00:05:43,000
+First of all it is going to check whether it is even or not.
+
+118
+00:05:43,000 --> 00:05:45,000
+And then whether it is greater than five.
+
+119
+00:05:45,000 --> 00:05:50,000
+So out of this elements you will be able to see that I am able to get only six and eight remaining.
+
+120
+00:05:50,000 --> 00:05:52,000
+All elements are odd or less than five.
+
+121
+00:05:52,000 --> 00:05:53,000
+Perfect.
+
+122
+00:05:53,000 --> 00:05:57,000
+Uh, let's go ahead and see one more way of doing this.
+
+123
+00:05:57,000 --> 00:06:03,000
+Okay, now let's say that I want to apply a filter operation not only on list, let's say on dictionaries
+
+124
+00:06:03,000 --> 00:06:03,000
+okay.
+
+125
+00:06:03,000 --> 00:06:07,000
+So here I will just go ahead and do this okay.
+
+126
+00:06:07,000 --> 00:06:20,000
+I will say hey apply filter to check if the age is greater than 25 in dictionary okay.
+
+127
+00:06:21,000 --> 00:06:25,000
+So here you can basically see I will just create some data.
+
+128
+00:06:25,000 --> 00:06:27,000
+And again I have already created this kind of data.
+
+129
+00:06:27,000 --> 00:06:35,000
+So let me see from my which functions map function I think I have actually used this kind of data.
+
+130
+00:06:35,000 --> 00:06:36,000
+Uh yeah.
+
+131
+00:06:36,000 --> 00:06:39,000
+So this is my people data okay.
+
+132
+00:06:39,000 --> 00:06:41,000
+So here I have specifically people data.
+
+133
+00:06:41,000 --> 00:06:44,000
+I will use this same thing okay.
+
+134
+00:06:45,000 --> 00:06:48,000
+Just trying to save time okay.
+
+135
+00:06:48,000 --> 00:06:56,000
+Now from this I will create a function where I'll say age greater than 25.
+
+136
+00:06:56,000 --> 00:06:56,000
+Okay.
+
+137
+00:06:56,000 --> 00:07:01,000
+And uh, let's say I'll just make some more data over here.
+
+138
+00:07:01,000 --> 00:07:02,000
+I will cope up.
+
+139
+00:07:02,000 --> 00:07:05,000
+I'll put over here, I'll say Jack.
+
+140
+00:07:05,000 --> 00:07:10,000
+Then along with this, I'll say, John, age will be 25.
+
+141
+00:07:10,000 --> 00:07:10,000
+Okay.
+
+142
+00:07:10,000 --> 00:07:14,000
+And then what we are going to basically do, we are going to create a function here.
+
+143
+00:07:14,000 --> 00:07:18,000
+We are going to give the person information, one item person information.
+
+144
+00:07:18,000 --> 00:07:22,000
+And then we are just going to return the person of age.
+
+145
+00:07:22,000 --> 00:07:23,000
+Right.
+
+146
+00:07:23,000 --> 00:07:29,000
+And this age should be greater than 25.
+
+147
+00:07:29,000 --> 00:07:31,000
+And based on this either it will return true or false.
+
+148
+00:07:31,000 --> 00:07:35,000
+Right now we are just going to apply this with the help of filter.
+
+149
+00:07:35,000 --> 00:07:37,000
+And we will use this particular function.
+
+150
+00:07:37,000 --> 00:07:39,000
+So I'll say filter.
+
+151
+00:07:39,000 --> 00:07:44,000
+And this will be my age greater than 25 along with my people.
+
+152
+00:07:44,000 --> 00:07:51,000
+Uh, because I need to apply this on my entire uh uh, what to say collection that is iterable.
+
+153
+00:07:51,000 --> 00:07:53,000
+And then I'll try to convert this into a list.
+
+154
+00:07:53,000 --> 00:07:54,000
+So if I go ahead and print it.
+
+155
+00:07:54,000 --> 00:07:58,000
+So here you'll be able to see name age Chris, age 32 and 33.
+
+156
+00:07:58,000 --> 00:08:01,000
+Because this particular condition checks only.
+
+157
+00:08:01,000 --> 00:08:06,000
+And returns only the age based on the age condition greater than 25, it will return those specific
+
+158
+00:08:06,000 --> 00:08:06,000
+records.
+
+159
+00:08:06,000 --> 00:08:11,000
+And yes, from this particular filter operation, you will be able to see that I'm able to do this right.
+
+160
+00:08:11,000 --> 00:08:14,000
+So these are some of the amazing operations that you can do with filter.
+
+161
+00:08:14,000 --> 00:08:16,000
+So I would definitely like to put some kind of conclusions.
+
+162
+00:08:16,000 --> 00:08:21,000
+And I'm doing that particular thing with respect to every video that I, uh, record in this.
+
+163
+00:08:21,000 --> 00:08:24,000
+So here these are some of the conclusions.
+
+164
+00:08:25,000 --> 00:08:29,000
+So here you can see the filter function is a powerful tool for creating iterators that filter items
+
+165
+00:08:29,000 --> 00:08:31,000
+out of an iterable based on a function.
+
+166
+00:08:31,000 --> 00:08:35,000
+It is commonly used for data cleaning filter objects and removing unwanted elements.
+
+167
+00:08:36,000 --> 00:08:39,000
+By mastering filter, you can write more concise and efficient code for processing and manipulating
+
+168
+00:08:39,000 --> 00:08:41,000
+collections in Python.
+
+169
+00:08:41,000 --> 00:08:43,000
+So yes, this was about filter.
+
+170
+00:08:43,000 --> 00:08:48,000
+Now, as we go ahead, uh, we'll be discussing about and again we'll be reusing all this things.
+
+171
+00:08:48,000 --> 00:08:51,000
+But, uh, I think you got a clear idea about functions.
+
+172
+00:08:51,000 --> 00:08:52,000
+Different types of functions.
+
+173
+00:08:52,000 --> 00:08:53,000
+Anonymous function.
+
+174
+00:08:53,000 --> 00:08:53,000
+Lambda function.
+
+175
+00:08:53,000 --> 00:08:54,000
+Map function.
+
+176
+00:08:54,000 --> 00:08:55,000
+Filter function.
+
+177
+00:08:56,000 --> 00:08:57,000
+Uh, so yes, this was it from my side.
+
+178
+00:08:57,000 --> 00:08:59,000
+I will see you all in the next video.
+
+179
+00:08:59,000 --> 00:09:00,000
+Thank you.
+
+180
+00:09:00,000 --> 00:09:00,000
+Take care.
+

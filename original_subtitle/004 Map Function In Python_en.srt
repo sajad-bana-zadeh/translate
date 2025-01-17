@@ -1,0 +1,932 @@
+1
+00:00:00,000 --> 00:00:00,000
+Hello guys.
+
+2
+00:00:00,000 --> 00:00:03,000
+So we are going to continue our discussion with respect to Python.
+
+3
+00:00:03,000 --> 00:00:06,000
+And in this video we are going to discuss about the map function.
+
+4
+00:00:06,000 --> 00:00:07,000
+Okay.
+
+5
+00:00:07,000 --> 00:00:09,000
+So what exactly is a map function.
+
+6
+00:00:09,000 --> 00:00:16,000
+It applies a given function to all the items in an input list or any other iterable, and returns a
+
+7
+00:00:16,000 --> 00:00:18,000
+map object an iterator.
+
+8
+00:00:18,000 --> 00:00:22,000
+This is particularly useful for transforming data in list comprehensively.
+
+9
+00:00:22,000 --> 00:00:25,000
+Now, uh, the best example to show you that.
+
+10
+00:00:25,000 --> 00:00:27,000
+Why do we exactly use map?
+
+11
+00:00:27,000 --> 00:00:29,000
+Let me just go ahead and write a code for you.
+
+12
+00:00:29,000 --> 00:00:30,000
+Okay.
+
+13
+00:00:30,000 --> 00:00:38,000
+So let's say uh, uh, I will just go ahead and define one method which is called as square.
+
+14
+00:00:38,000 --> 00:00:38,000
+Okay.
+
+15
+00:00:38,000 --> 00:00:45,000
+So what does square does is that it takes an input and it just multiplies.
+
+16
+00:00:45,000 --> 00:00:51,000
+Or it does a square of that specific input or it multiply it with itself and it give us gives us the
+
+17
+00:00:51,000 --> 00:00:52,000
+result.
+
+18
+00:00:52,000 --> 00:00:52,000
+Okay.
+
+19
+00:00:52,000 --> 00:00:58,000
+So if I go ahead and try to put any number over here, let's say square of four is nothing but 16.
+
+20
+00:00:58,000 --> 00:01:03,000
+If I go ahead and square a square of ten, then I should be getting 100 right now.
+
+21
+00:01:03,000 --> 00:01:04,000
+This is fine right here.
+
+22
+00:01:04,000 --> 00:01:05,000
+It's very simple.
+
+23
+00:01:05,000 --> 00:01:07,000
+I'm just giving an input and I'm doing the square of it.
+
+24
+00:01:07,000 --> 00:01:08,000
+Okay.
+
+25
+00:01:08,000 --> 00:01:16,000
+Now let's say if I have a list of numbers or let's say I have a numbers, uh, in the form of list,
+
+26
+00:01:16,000 --> 00:01:18,000
+or it can be in the form of tuple.
+
+27
+00:01:18,000 --> 00:01:22,000
+Let's say in this particular case I have all these numbers 12345678.
+
+28
+00:01:22,000 --> 00:01:22,000
+Okay.
+
+29
+00:01:23,000 --> 00:01:29,000
+Now I want to apply the same operation for each and every number.
+
+30
+00:01:29,000 --> 00:01:33,000
+One way is that I may probably give the list directly over here.
+
+31
+00:01:33,000 --> 00:01:35,000
+Then I may put a for loop, right?
+
+32
+00:01:35,000 --> 00:01:40,000
+I iterate through each and every element and then probably, you know, do the multiplication and append
+
+33
+00:01:40,000 --> 00:01:41,000
+in a separate list.
+
+34
+00:01:41,000 --> 00:01:42,000
+Right?
+
+35
+00:01:42,000 --> 00:01:45,000
+So for doing this specific operation I need to do so many things right.
+
+36
+00:01:45,000 --> 00:01:50,000
+I need to create an empty list and again do the append operation inside that iterate all through all
+
+37
+00:01:50,000 --> 00:01:51,000
+this particular elements.
+
+38
+00:01:51,000 --> 00:01:57,000
+Now instead of doing all those things, you know we can directly use map right now let me do let me
+
+39
+00:01:57,000 --> 00:01:59,000
+show you what does map usually take.
+
+40
+00:01:59,000 --> 00:01:59,000
+Okay.
+
+41
+00:02:00,000 --> 00:02:03,000
+Now I want to perform this operations on all these elements.
+
+42
+00:02:03,000 --> 00:02:07,000
+So map usually takes two input parameters okay.
+
+43
+00:02:07,000 --> 00:02:11,000
+One is the function name and one is the iterable.
+
+44
+00:02:11,000 --> 00:02:13,000
+Iterable basically means the collection right.
+
+45
+00:02:13,000 --> 00:02:16,000
+So in this particular case if I'm calling map.
+
+46
+00:02:16,000 --> 00:02:18,000
+So first parameter that I am going to give is square.
+
+47
+00:02:18,000 --> 00:02:20,000
+So square is my function.
+
+48
+00:02:20,000 --> 00:02:22,000
+I don't even have to use brackets over here.
+
+49
+00:02:22,000 --> 00:02:25,000
+And the second thing that I have to give is my iterable.
+
+50
+00:02:25,000 --> 00:02:26,000
+That is my numbers okay.
+
+51
+00:02:26,000 --> 00:02:31,000
+So if I go ahead and execute this here, you can see that it has created a map object at this specific
+
+52
+00:02:31,000 --> 00:02:31,000
+memory location.
+
+53
+00:02:31,000 --> 00:02:35,000
+Now since I want let's say all the values in the form of list.
+
+54
+00:02:35,000 --> 00:02:39,000
+So I will just go ahead and convert this into a list okay.
+
+55
+00:02:39,000 --> 00:02:41,000
+So if I convert this into a list.
+
+56
+00:02:41,000 --> 00:02:44,000
+So here you will be able to see the output.
+
+57
+00:02:44,000 --> 00:02:47,000
+Right now what this is going to do is that it is going to take each and every number.
+
+58
+00:02:47,000 --> 00:02:51,000
+The map is going to take each and every number, call this particular function.
+
+59
+00:02:51,000 --> 00:02:55,000
+And uh, basically just for each and every number, it is just going to do the square right now if I
+
+60
+00:02:55,000 --> 00:02:57,000
+go ahead and see the answer.
+
+61
+00:02:57,000 --> 00:03:00,000
+So this basically becomes my list over here.
+
+62
+00:03:00,000 --> 00:03:04,000
+So I have to use this brackets since uh okay.
+
+63
+00:03:04,000 --> 00:03:06,000
+Now let's go ahead and see this.
+
+64
+00:03:06,000 --> 00:03:10,000
+So here you can see for every number 149 16, 2536, 49, 64.
+
+65
+00:03:10,000 --> 00:03:12,000
+It has just squared up each and every number.
+
+66
+00:03:12,000 --> 00:03:16,000
+So this is one basic example of using map.
+
+67
+00:03:16,000 --> 00:03:16,000
+Right.
+
+68
+00:03:16,000 --> 00:03:20,000
+So it applies a given function to all the items in an input list.
+
+69
+00:03:20,000 --> 00:03:25,000
+Uh like in in this particular case it is list or it can be any other iterable.
+
+70
+00:03:25,000 --> 00:03:26,000
+Okay now this is amazing.
+
+71
+00:03:26,000 --> 00:03:28,000
+Let me just show you more functionalities.
+
+72
+00:03:28,000 --> 00:03:32,000
+And this time I will be using Lambda function with map okay.
+
+73
+00:03:32,000 --> 00:03:35,000
+Lambda function with map and obviously lambda function.
+
+74
+00:03:35,000 --> 00:03:39,000
+You know that if there is a single expression you can just go ahead and apply lambda.
+
+75
+00:03:39,000 --> 00:03:40,000
+Okay.
+
+76
+00:03:40,000 --> 00:03:41,000
+So I will take the same operation.
+
+77
+00:03:41,000 --> 00:03:44,000
+So let's say this is my numbers okay.
+
+78
+00:03:44,000 --> 00:03:46,000
+Now how do I apply.
+
+79
+00:03:46,000 --> 00:03:50,000
+Instead of this particular function I'll apply lambda function and I'll give the same name numbers.
+
+80
+00:03:50,000 --> 00:03:52,000
+So again I will go ahead and write list.
+
+81
+00:03:52,000 --> 00:03:54,000
+And here I'm going to use the map function.
+
+82
+00:03:54,000 --> 00:03:57,000
+The first parameter will be my lambda function.
+
+83
+00:03:57,000 --> 00:04:00,000
+Lambda function is nothing but it is an anonymous function.
+
+84
+00:04:00,000 --> 00:04:02,000
+So I will just go ahead and write lambda.
+
+85
+00:04:02,000 --> 00:04:05,000
+Now what is the kind of operation that I really want to do?
+
+86
+00:04:05,000 --> 00:04:10,000
+So input argument will be one experimenter, lets say any experimenter.
+
+87
+00:04:10,000 --> 00:04:13,000
+And here I'm just going to multiply x into x right.
+
+88
+00:04:13,000 --> 00:04:18,000
+And this is my entire lambda function itself right now the second parameter is nothing but my numbers
+
+89
+00:04:18,000 --> 00:04:18,000
+which is my list.
+
+90
+00:04:18,000 --> 00:04:22,000
+Now if I go ahead and execute it here, you'll be able to see with the help of lambda function.
+
+91
+00:04:22,000 --> 00:04:24,000
+Also we are able to execute this okay.
+
+92
+00:04:24,000 --> 00:04:27,000
+Now this is also very much simple very much easy.
+
+93
+00:04:27,000 --> 00:04:29,000
+You can here you can write any kind of operation.
+
+94
+00:04:29,000 --> 00:04:31,000
+Let's say I want to just add ten.
+
+95
+00:04:31,000 --> 00:04:32,000
+I want to add 100.
+
+96
+00:04:32,000 --> 00:04:36,000
+I want to do the multiplication division, anything that I can uh, I really want to do I'll be able
+
+97
+00:04:36,000 --> 00:04:36,000
+to do it.
+
+98
+00:04:36,000 --> 00:04:37,000
+Okay.
+
+99
+00:04:37,000 --> 00:04:38,000
+Now let's say that.
+
+100
+00:04:39,000 --> 00:04:39,000
+Okay, fine.
+
+101
+00:04:39,000 --> 00:04:40,000
+This is fine.
+
+102
+00:04:40,000 --> 00:04:41,000
+Okay.
+
+103
+00:04:41,000 --> 00:04:43,000
+Can we map multiple iterables.
+
+104
+00:04:43,000 --> 00:04:48,000
+Now the question is can we map multiple iterables?
+
+105
+00:04:48,000 --> 00:04:49,000
+Okay.
+
+106
+00:04:49,000 --> 00:04:51,000
+And that is what we are going to discuss over here.
+
+107
+00:04:51,000 --> 00:04:53,000
+So let me go ahead and write numbers one okay.
+
+108
+00:04:53,000 --> 00:04:55,000
+Numbers one.
+
+109
+00:04:55,000 --> 00:04:57,000
+And here I'm just going to create 123.
+
+110
+00:04:57,000 --> 00:04:59,000
+And then I'm just going to write.
+
+111
+00:05:00,000 --> 00:05:01,000
+Numbers.
+
+112
+00:05:01,000 --> 00:05:04,000
+Numbers two, which is equal to four.
+
+113
+00:05:04,000 --> 00:05:05,000
+Comma five.
+
+114
+00:05:05,000 --> 00:05:06,000
+Comma six.
+
+115
+00:05:06,000 --> 00:05:06,000
+Okay.
+
+116
+00:05:07,000 --> 00:05:13,000
+Now, since I have two tables over here, and what I really want to do is that take each and every element
+
+117
+00:05:13,000 --> 00:05:15,000
+from this table and keep on adding both of them.
+
+118
+00:05:15,000 --> 00:05:20,000
+Let's say my final output should be a list of elements where I'll be adding the first element, second
+
+119
+00:05:20,000 --> 00:05:21,000
+element, and third element.
+
+120
+00:05:21,000 --> 00:05:24,000
+So my final answer should be five seven, nine.
+
+121
+00:05:24,000 --> 00:05:28,000
+Okay, so can I do that with the help of map and lambda function.
+
+122
+00:05:28,000 --> 00:05:33,000
+So here I'm just going to go ahead and create added underscore numbers okay.
+
+123
+00:05:33,000 --> 00:05:37,000
+And here I'm going to just go ahead and use map.
+
+124
+00:05:38,000 --> 00:05:40,000
+Along with that I'm going to use my lambda function.
+
+125
+00:05:40,000 --> 00:05:43,000
+Let's say I'm going to take two parameters right.
+
+126
+00:05:43,000 --> 00:05:44,000
+This will be one parameter.
+
+127
+00:05:44,000 --> 00:05:45,000
+This will be the other parameter.
+
+128
+00:05:45,000 --> 00:05:47,000
+So I will just go ahead and use x comma y.
+
+129
+00:05:47,000 --> 00:05:50,000
+And now my expression will be very simple right.
+
+130
+00:05:50,000 --> 00:05:52,000
+I'm just going to add both these numbers.
+
+131
+00:05:52,000 --> 00:05:59,000
+So it should be x plus y right now the second parameter that I'm going to give is my numbers one right.
+
+132
+00:05:59,000 --> 00:06:01,000
+So it will be my numbers one.
+
+133
+00:06:01,000 --> 00:06:02,000
+Now second parameter.
+
+134
+00:06:02,000 --> 00:06:04,000
+Also I can actually give right.
+
+135
+00:06:04,000 --> 00:06:06,000
+So second parameter will be my next list right.
+
+136
+00:06:06,000 --> 00:06:09,000
+So here I'm just going to go ahead and paste number two.
+
+137
+00:06:09,000 --> 00:06:14,000
+And this all needs to be converted in list okay.
+
+138
+00:06:14,000 --> 00:06:17,000
+And now if I go ahead and print my added numbers.
+
+139
+00:06:18,000 --> 00:06:22,000
+So here you can see that I'm able to get five comma seven comma nine.
+
+140
+00:06:22,000 --> 00:06:22,000
+Right.
+
+141
+00:06:22,000 --> 00:06:25,000
+So this is one amazing example.
+
+142
+00:06:25,000 --> 00:06:30,000
+Uh directly uh what I'm actually doing now there are multiple things that we can do with map.
+
+143
+00:06:30,000 --> 00:06:32,000
+Let's show you one more operation.
+
+144
+00:06:32,000 --> 00:06:44,000
+So here now I try to use map to convert a list of string to integers okay I'm going to do this okay.
+
+145
+00:06:44,000 --> 00:06:48,000
+Now let's say that I have this entire code okay I'll just show you this code.
+
+146
+00:06:48,000 --> 00:06:49,000
+Very simple.
+
+147
+00:06:49,000 --> 00:06:51,000
+So here is my string numbers.
+
+148
+00:06:51,000 --> 00:06:53,000
+What I'm actually doing I'm just applying map.
+
+149
+00:06:53,000 --> 00:06:55,000
+The function will be int.
+
+150
+00:06:55,000 --> 00:07:00,000
+So typecasting is basically doing done on all the string underscore numbers which is in the form of
+
+151
+00:07:00,000 --> 00:07:01,000
+list.
+
+152
+00:07:01,000 --> 00:07:04,000
+And here you can actually see I'll be able to get the output.
+
+153
+00:07:04,000 --> 00:07:09,000
+So there are a lot of options that you can specifically do with the help of uh map.
+
+154
+00:07:09,000 --> 00:07:15,000
+Again you can use inbuilt function like int like uh string dot upper or anything that you really want
+
+155
+00:07:15,000 --> 00:07:15,000
+to do.
+
+156
+00:07:15,000 --> 00:07:19,000
+And one thing you have to make sure whenever you are using function I don't have to use any brackets.
+
+157
+00:07:19,000 --> 00:07:20,000
+Right.
+
+158
+00:07:20,000 --> 00:07:24,000
+So lambda function I've called square I have called square is already defined over here.
+
+159
+00:07:24,000 --> 00:07:25,000
+I don't have to use any brackets.
+
+160
+00:07:25,000 --> 00:07:26,000
+Okay.
+
+161
+00:07:26,000 --> 00:07:31,000
+Now let me just show you one more, uh, good example that how I can apply inbuilt function with the
+
+162
+00:07:31,000 --> 00:07:32,000
+help of map.
+
+163
+00:07:32,000 --> 00:07:35,000
+So let's say these are my words okay.
+
+164
+00:07:35,000 --> 00:07:37,000
+The first word is apple.
+
+165
+00:07:37,000 --> 00:07:40,000
+And let's say that this is all are in smaller character.
+
+166
+00:07:40,000 --> 00:07:41,000
+Then I have banana.
+
+167
+00:07:41,000 --> 00:07:44,000
+Then I have cherry.
+
+168
+00:07:44,000 --> 00:07:44,000
+Okay.
+
+169
+00:07:45,000 --> 00:07:49,000
+Now what I'm actually going to do I'm just going to create my upper words.
+
+170
+00:07:49,000 --> 00:07:54,000
+And here I'm going to use list of map okay.
+
+171
+00:07:54,000 --> 00:07:59,000
+And now I know that in string there is a method is called as dot upper.
+
+172
+00:07:59,000 --> 00:08:05,000
+And I need to apply this str dot upper on each and every words.
+
+173
+00:08:05,000 --> 00:08:06,000
+Right.
+
+174
+00:08:06,000 --> 00:08:07,000
+So I'll just go ahead and write words.
+
+175
+00:08:07,000 --> 00:08:17,000
+So once I do this and once I print my upper underscore words uh or word, I'll be able to see this.
+
+176
+00:08:17,000 --> 00:08:20,000
+See apple banana and cherry is there.
+
+177
+00:08:20,000 --> 00:08:20,000
+Okay.
+
+178
+00:08:21,000 --> 00:08:24,000
+Uh, let me just do one more thing.
+
+179
+00:08:24,000 --> 00:08:28,000
+One more, uh, best thing, uh, over here, let's apply to a list of dictionary.
+
+180
+00:08:28,000 --> 00:08:30,000
+Let's apply a map function to a list of dictionary.
+
+181
+00:08:30,000 --> 00:08:34,000
+So I will go ahead and create a function which will be saying get underscore name.
+
+182
+00:08:34,000 --> 00:08:34,000
+Okay.
+
+183
+00:08:34,000 --> 00:08:37,000
+So here I will be giving my dictionary okay.
+
+184
+00:08:37,000 --> 00:08:38,000
+This person will be a dictionary.
+
+185
+00:08:38,000 --> 00:08:45,000
+And I will return person of name okay.
+
+186
+00:08:45,000 --> 00:08:48,000
+Now this is fine for one dictionary item right.
+
+187
+00:08:48,000 --> 00:08:51,000
+But what if I have a list of dictionary item.
+
+188
+00:08:51,000 --> 00:08:55,000
+Let's say that I have a list of dictionary item which I will define over here.
+
+189
+00:08:55,000 --> 00:08:57,000
+So let's say I will go ahead and write people.
+
+190
+00:08:57,000 --> 00:09:06,000
+And uh, let me quickly go ahead and define over here and, and let me go and write name colon.
+
+191
+00:09:06,000 --> 00:09:07,000
+Okay.
+
+192
+00:09:07,000 --> 00:09:13,000
+And uh, name will basically be crush comma age.
+
+193
+00:09:15,000 --> 00:09:16,000
+Age will be nothing.
+
+194
+00:09:16,000 --> 00:09:18,000
+But uh, colon 32.
+
+195
+00:09:18,000 --> 00:09:19,000
+Okay.
+
+196
+00:09:19,000 --> 00:09:24,000
+So this will be my first, uh, two, uh, name item or people item.
+
+197
+00:09:24,000 --> 00:09:30,000
+And then let me just go ahead and say name colon is equal to Jack.
+
+198
+00:09:31,000 --> 00:09:31,000
+Okay.
+
+199
+00:09:31,000 --> 00:09:36,000
+And then I have the age as 33 okay.
+
+200
+00:09:36,000 --> 00:09:38,000
+So this will be my second item okay.
+
+201
+00:09:38,000 --> 00:09:43,000
+Now I want to perform this only not only to one item, instead all the items.
+
+202
+00:09:43,000 --> 00:09:44,000
+Right.
+
+203
+00:09:44,000 --> 00:09:46,000
+So let's say I have just taken two over here.
+
+204
+00:09:46,000 --> 00:09:47,000
+Now how do I do it?
+
+205
+00:09:47,000 --> 00:09:48,000
+First of all I will use list.
+
+206
+00:09:48,000 --> 00:09:50,000
+Then I will use map.
+
+207
+00:09:50,000 --> 00:09:53,000
+The map first function will be get underscore name.
+
+208
+00:09:53,000 --> 00:09:54,000
+Okay.
+
+209
+00:09:54,000 --> 00:09:57,000
+Then I'll be applying this to my entire iterable.
+
+210
+00:09:57,000 --> 00:09:59,000
+And here I have list of dictionary items.
+
+211
+00:09:59,000 --> 00:09:59,000
+Right.
+
+212
+00:09:59,000 --> 00:09:59,000
+So.
+
+213
+00:09:59,000 --> 00:10:04,000
+If I go ahead and see the output here, you can see from this two records I have explored Christian-jacques
+
+214
+00:10:04,000 --> 00:10:06,000
+and it is being given me in the form of list.
+
+215
+00:10:07,000 --> 00:10:07,000
+Right.
+
+216
+00:10:07,000 --> 00:10:11,000
+Uh, this is one amazing things that you will be able to see over here.
+
+217
+00:10:12,000 --> 00:10:17,000
+Um, and uh, at the end of the day, uh, you can apply even multiple functions if you want.
+
+218
+00:10:17,000 --> 00:10:21,000
+You can create multiple function, apply to the same list of elements.
+
+219
+00:10:21,000 --> 00:10:27,000
+So in conclusion, uh, if I really want to talk about map, uh, so here, uh, one thing is that a
+
+220
+00:10:27,000 --> 00:10:30,000
+map is used uh, it is used in various places.
+
+221
+00:10:30,000 --> 00:10:33,000
+So I'll just give some kind of conclusion over here.
+
+222
+00:10:34,000 --> 00:10:38,000
+So map function is a powerful tool for applying transformation to iterable data structures.
+
+223
+00:10:38,000 --> 00:10:43,000
+It can be used with regular functions Lambda function, even multiple iterables, providing a versatile
+
+224
+00:10:43,000 --> 00:10:45,000
+approach to data processing in Python.
+
+225
+00:10:45,000 --> 00:10:48,000
+So by understanding utilizing map, you can write more efficient and readable code.
+
+226
+00:10:48,000 --> 00:10:54,000
+So it is quite efficient, you know, in just single line things without iterating.
+
+227
+00:10:54,000 --> 00:10:56,000
+You're using this particular efficient data structures.
+
+228
+00:10:56,000 --> 00:11:01,000
+And at the end of the day, you just need to make sure your code is much more readable.
+
+229
+00:11:01,000 --> 00:11:04,000
+The efficiency is there, performance is there with respect to this.
+
+230
+00:11:04,000 --> 00:11:05,000
+So I hope you like this particular video.
+
+231
+00:11:05,000 --> 00:11:07,000
+This was about maps function.
+
+232
+00:11:07,000 --> 00:11:08,000
+I'll see you all in the next video.
+
+233
+00:11:08,000 --> 00:11:08,000
+Thank you.
+

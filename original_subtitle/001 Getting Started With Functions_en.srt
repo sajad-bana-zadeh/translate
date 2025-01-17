@@ -1,0 +1,1892 @@
+1
+00:00:00,000 --> 00:00:01,000
+Hello guys.
+
+2
+00:00:01,000 --> 00:00:04,000
+So we are going to continue the discussion with respect to Python.
+
+3
+00:00:04,000 --> 00:00:09,000
+And in this video we are going to discuss about the most important module that is called as functions.
+
+4
+00:00:09,000 --> 00:00:11,000
+So what is the entire video outline?
+
+5
+00:00:11,000 --> 00:00:15,000
+In this video I will be discussing about what exactly is functions.
+
+6
+00:00:15,000 --> 00:00:16,000
+Why do we require functions?
+
+7
+00:00:16,000 --> 00:00:21,000
+Along with that, we'll also be seeing about uh, calling a function, defining a function.
+
+8
+00:00:21,000 --> 00:00:22,000
+How do we define it.
+
+9
+00:00:22,000 --> 00:00:23,000
+What is the syntax of it.
+
+10
+00:00:23,000 --> 00:00:28,000
+Then along with that we'll be discussing about functions parameter default parameters.
+
+11
+00:00:28,000 --> 00:00:30,000
+Then what is variable length arguments.
+
+12
+00:00:30,000 --> 00:00:30,000
+You know.
+
+13
+00:00:30,000 --> 00:00:36,000
+So there are some very important arguments like positional argument and keyword argument will be discussing
+
+14
+00:00:36,000 --> 00:00:37,000
+about that.
+
+15
+00:00:37,000 --> 00:00:41,000
+Then we will also be discussing about return statement.
+
+16
+00:00:41,000 --> 00:00:46,000
+So we will be covering each and every thing uh, with the help of again code with the help of Python.
+
+17
+00:00:46,000 --> 00:00:46,000
+Yeah.
+
+18
+00:00:46,000 --> 00:00:49,000
+Each and every thing will try to write it down with multiple examples.
+
+19
+00:00:49,000 --> 00:00:55,000
+And, uh, I'll be making sure that you understand this, because this is one of the most important
+
+20
+00:00:55,000 --> 00:01:00,000
+thing, because whenever we are writing any data science projects or Python projects, we will be definitely
+
+21
+00:01:00,000 --> 00:01:01,000
+using a lot of functions.
+
+22
+00:01:01,000 --> 00:01:05,000
+So first of all, let's go ahead and define the function.
+
+23
+00:01:05,000 --> 00:01:08,000
+A function is a block of code okay.
+
+24
+00:01:08,000 --> 00:01:09,000
+Again I'm repeating it.
+
+25
+00:01:09,000 --> 00:01:13,000
+A function is a block of code that performs a specific task.
+
+26
+00:01:13,000 --> 00:01:19,000
+A functions help in organizing code, reusing code, and improving readability.
+
+27
+00:01:19,000 --> 00:01:23,000
+Okay, so it is a block of code that performs a specific task.
+
+28
+00:01:23,000 --> 00:01:27,000
+It helps in organizing code, reusing code, and improving readability.
+
+29
+00:01:27,000 --> 00:01:31,000
+One of the best syntax if you really want to check it out right.
+
+30
+00:01:31,000 --> 00:01:32,000
+So this is the syntax.
+
+31
+00:01:32,000 --> 00:01:35,000
+So here I'm just going to give you the syntax.
+
+32
+00:01:35,000 --> 00:01:37,000
+This function is an empty function.
+
+33
+00:01:37,000 --> 00:01:41,000
+I've just written it for the for just to make you understand.
+
+34
+00:01:41,000 --> 00:01:44,000
+So first of all a function starts with a definition keyword.
+
+35
+00:01:44,000 --> 00:01:47,000
+Then you have the function name.
+
+36
+00:01:47,000 --> 00:01:49,000
+And if any parameters that you are defining.
+
+37
+00:01:49,000 --> 00:01:51,000
+So we have to define the parameters.
+
+38
+00:01:51,000 --> 00:01:53,000
+This is doc string.
+
+39
+00:01:53,000 --> 00:01:59,000
+Uh doc string is just to use to uh, you know, write some kind of comments what the specific function
+
+40
+00:01:59,000 --> 00:02:00,000
+does.
+
+41
+00:02:00,000 --> 00:02:04,000
+So that any developer will be able to understand it.
+
+42
+00:02:04,000 --> 00:02:07,000
+Along with that, we will go ahead and write our function body.
+
+43
+00:02:07,000 --> 00:02:11,000
+Function body is more about all the code that we are going to use inside the function.
+
+44
+00:02:11,000 --> 00:02:14,000
+And then finally we return some kind of value okay.
+
+45
+00:02:14,000 --> 00:02:17,000
+It is not necessary that uh return should be there.
+
+46
+00:02:17,000 --> 00:02:22,000
+Some of the functions may not have return value, but some of the functions will definitely have a lot
+
+47
+00:02:22,000 --> 00:02:23,000
+of return value.
+
+48
+00:02:23,000 --> 00:02:24,000
+Okay.
+
+49
+00:02:24,000 --> 00:02:27,000
+So uh, this is the basic syntax.
+
+50
+00:02:27,000 --> 00:02:33,000
+Now let me just go ahead and tell or talk about why do we require function okay.
+
+51
+00:02:33,000 --> 00:02:34,000
+Why functions.
+
+52
+00:02:34,000 --> 00:02:37,000
+This is important for everybody to understand.
+
+53
+00:02:38,000 --> 00:02:41,000
+Let's say I am creating a number variable.
+
+54
+00:02:41,000 --> 00:02:47,000
+And I go ahead and uh, write a code which will be able to check whether a number is even or odd.
+
+55
+00:02:47,000 --> 00:02:53,000
+So suppose if I go ahead and write if num modulus two or percentile two is double equal to zero, then
+
+56
+00:02:53,000 --> 00:02:58,000
+obviously I'll say hey print the number is even right.
+
+57
+00:02:58,000 --> 00:02:59,000
+So I'm just going to write.
+
+58
+00:02:59,000 --> 00:03:01,000
+The number is even else.
+
+59
+00:03:01,000 --> 00:03:05,000
+What I usually do is that in this I will go ahead and print and write.
+
+60
+00:03:06,000 --> 00:03:10,000
+The number is odd right.
+
+61
+00:03:10,000 --> 00:03:14,000
+So here what exactly is basically happening.
+
+62
+00:03:14,000 --> 00:03:16,000
+We are just going to check whether a number is even or odd.
+
+63
+00:03:16,000 --> 00:03:21,000
+And obviously if I go ahead and execute this condition will be true because the number is even.
+
+64
+00:03:21,000 --> 00:03:22,000
+And I'm going to get the answer.
+
+65
+00:03:22,000 --> 00:03:23,000
+The number is even.
+
+66
+00:03:23,000 --> 00:03:23,000
+Okay.
+
+67
+00:03:24,000 --> 00:03:30,000
+Now let's say in my project I want to write this piece of code, and I need to reuse this piece of code
+
+68
+00:03:30,000 --> 00:03:35,000
+in multiple places, because in multiple places I'm going to check whether a number is odd or even.
+
+69
+00:03:35,000 --> 00:03:41,000
+Right now, in this case, what I have to do, I have to copy the same code, use it in multiple files
+
+70
+00:03:42,000 --> 00:03:43,000
+instead of this.
+
+71
+00:03:43,000 --> 00:03:47,000
+A better way of reusing the entire code will be with the help of functions.
+
+72
+00:03:47,000 --> 00:03:48,000
+Now what?
+
+73
+00:03:48,000 --> 00:03:51,000
+I will do this entire code I will write inside a function.
+
+74
+00:03:51,000 --> 00:03:56,000
+Now the best way to write is that let's say I will go ahead and create my definition keyword.
+
+75
+00:03:56,000 --> 00:03:59,000
+I will say hey, my function name is even or odd, okay?
+
+76
+00:04:00,000 --> 00:04:03,000
+And this will specifically take a parameter which is called as number.
+
+77
+00:04:04,000 --> 00:04:07,000
+And now I will go ahead and write my condition inside this.
+
+78
+00:04:07,000 --> 00:04:08,000
+Right.
+
+79
+00:04:08,000 --> 00:04:14,000
+So as soon as I go ahead and press enter, that basically means I'm inside my function.
+
+80
+00:04:14,000 --> 00:04:14,000
+Right?
+
+81
+00:04:14,000 --> 00:04:18,000
+So automatically the indentation goes inside this function block.
+
+82
+00:04:18,000 --> 00:04:23,000
+Right now the first thing is that I can go ahead and write my doc string.
+
+83
+00:04:23,000 --> 00:04:33,000
+The doc string will be like, hey, this function performs, um, finds even or odd, okay, even or
+
+84
+00:04:33,000 --> 00:04:33,000
+odd.
+
+85
+00:04:33,000 --> 00:04:36,000
+So this is what I'm specifically writing over here.
+
+86
+00:04:36,000 --> 00:04:37,000
+So this becomes my doc string.
+
+87
+00:04:37,000 --> 00:04:40,000
+It is not compulsory that you really need to write a doc string.
+
+88
+00:04:40,000 --> 00:04:43,000
+You can leave it completely empty.
+
+89
+00:04:43,000 --> 00:04:48,000
+Uh, and you may also not even write any of these things, but it is a good practice that we should
+
+90
+00:04:48,000 --> 00:04:51,000
+definitely write some information about the function itself.
+
+91
+00:04:51,000 --> 00:04:55,000
+Uh, now I will go ahead and write my code inside this.
+
+92
+00:04:55,000 --> 00:04:59,000
+Now I will go ahead and write if num num is nothing but the same.
+
+93
+00:04:59,000 --> 00:04:59,000
+Uh.
+
+94
+00:05:00,000 --> 00:05:01,000
+Parameter that I'm actually getting.
+
+95
+00:05:01,000 --> 00:05:02,000
+And this is basically my parameter.
+
+96
+00:05:02,000 --> 00:05:08,000
+If num percentile two is double equal to zero I will go ahead and print the.
+
+97
+00:05:10,000 --> 00:05:10,000
+The.
+
+98
+00:05:12,000 --> 00:05:20,000
+The number is even or I will go ahead and write, else print.
+
+99
+00:05:23,000 --> 00:05:24,000
+The number is odd.
+
+100
+00:05:24,000 --> 00:05:25,000
+Right.
+
+101
+00:05:25,000 --> 00:05:28,000
+So here you can see I've defined this entire function.
+
+102
+00:05:28,000 --> 00:05:31,000
+Now I'll go just go ahead and press it and execute it.
+
+103
+00:05:31,000 --> 00:05:32,000
+Right.
+
+104
+00:05:32,000 --> 00:05:36,000
+So as soon as I execute it I have actually created my first function.
+
+105
+00:05:36,000 --> 00:05:36,000
+Right.
+
+106
+00:05:36,000 --> 00:05:37,000
+And this is amazing.
+
+107
+00:05:37,000 --> 00:05:41,000
+And if you have also created it, always make sure the indentation is managed.
+
+108
+00:05:41,000 --> 00:05:45,000
+If the indentation is right then everything is going to work fine.
+
+109
+00:05:45,000 --> 00:05:48,000
+Okay, let's see if I miss out the indentation, I execute it.
+
+110
+00:05:48,000 --> 00:05:49,000
+I will be getting an error.
+
+111
+00:05:49,000 --> 00:05:55,000
+It will be saying hey, expected an indented block after the if statement and this is what we have actually
+
+112
+00:05:55,000 --> 00:05:56,000
+done okay.
+
+113
+00:05:56,000 --> 00:05:58,000
+So I'll just say control Z.
+
+114
+00:05:58,000 --> 00:06:00,000
+Yeah now we are fine.
+
+115
+00:06:00,000 --> 00:06:04,000
+I'll go ahead and create my function even or odd now in order to call this function.
+
+116
+00:06:04,000 --> 00:06:11,000
+So let's call this function now wherever I want to use this code to find even or odd, I will just call
+
+117
+00:06:11,000 --> 00:06:13,000
+this function okay.
+
+118
+00:06:13,000 --> 00:06:17,000
+In order to call this function just go ahead and call the function name.
+
+119
+00:06:17,000 --> 00:06:21,000
+And here you just need to provide your parameter right.
+
+120
+00:06:21,000 --> 00:06:24,000
+So let's say the number parameter that I'm giving I want to give it as 24.
+
+121
+00:06:24,000 --> 00:06:30,000
+Now if I go ahead and execute it here you can see that automatically it is printing the number is even.
+
+122
+00:06:30,000 --> 00:06:33,000
+Because as soon as I give the parameter it went over here.
+
+123
+00:06:33,000 --> 00:06:35,000
+It went and checked all this condition.
+
+124
+00:06:35,000 --> 00:06:37,000
+Whichever is true, it printed it right.
+
+125
+00:06:38,000 --> 00:06:42,000
+A very simple way of creating a function and calling a function.
+
+126
+00:06:42,000 --> 00:06:44,000
+And why do we require a function?
+
+127
+00:06:44,000 --> 00:06:46,000
+Because every way we cannot write the code.
+
+128
+00:06:46,000 --> 00:06:48,000
+We need to reuse this kind of code.
+
+129
+00:06:48,000 --> 00:06:54,000
+So whenever you think, okay, I have some set of code block which I really need to reuse it, I will
+
+130
+00:06:54,000 --> 00:06:59,000
+try to create that entire thing inside a function itself, and I'll reuse it.
+
+131
+00:06:59,000 --> 00:06:59,000
+Right.
+
+132
+00:06:59,000 --> 00:07:04,000
+So through this, the most important thing will be that it helps in organizing code, reusing code,
+
+133
+00:07:04,000 --> 00:07:07,000
+and improving readability, improving readability.
+
+134
+00:07:07,000 --> 00:07:07,000
+Why?
+
+135
+00:07:07,000 --> 00:07:12,000
+Because we are also writing some amazing docstring over here so that we'll be able to understand, because
+
+136
+00:07:12,000 --> 00:07:16,000
+in a company, many people will work, many people will write different, different code over there,
+
+137
+00:07:16,000 --> 00:07:17,000
+multiple modules will be built.
+
+138
+00:07:17,000 --> 00:07:18,000
+Okay.
+
+139
+00:07:18,000 --> 00:07:22,000
+So this was a basic example with respect to function.
+
+140
+00:07:22,000 --> 00:07:26,000
+I have also spoken about a parameter like what exactly is a parameter?
+
+141
+00:07:26,000 --> 00:07:28,000
+How do you give a parameter in this?
+
+142
+00:07:29,000 --> 00:07:33,000
+Now there may be scenario that I may also have multiple parameters.
+
+143
+00:07:33,000 --> 00:07:35,000
+So let's work with multiple parameter.
+
+144
+00:07:35,000 --> 00:07:39,000
+So here I will go ahead and write function with.
+
+145
+00:07:40,000 --> 00:07:42,000
+Multiple parameters okay.
+
+146
+00:07:45,000 --> 00:07:45,000
+And parameters.
+
+147
+00:07:45,000 --> 00:07:48,000
+You can give integers string whatever things you require.
+
+148
+00:07:48,000 --> 00:07:50,000
+So I will go ahead and write definition.
+
+149
+00:07:50,000 --> 00:07:56,000
+And let's say I want to go ahead and create a add function to add two numbers.
+
+150
+00:07:56,000 --> 00:07:59,000
+So I will go ahead and write definition, add a comma b.
+
+151
+00:07:59,000 --> 00:08:04,000
+And let's say I go ahead and write my docstring again not compulsory.
+
+152
+00:08:04,000 --> 00:08:06,000
+I can also leave it like this.
+
+153
+00:08:06,000 --> 00:08:06,000
+Okay.
+
+154
+00:08:06,000 --> 00:08:07,000
+Just to show it to you.
+
+155
+00:08:07,000 --> 00:08:09,000
+That is the reason I'm writing.
+
+156
+00:08:09,000 --> 00:08:09,000
+Okay.
+
+157
+00:08:09,000 --> 00:08:11,000
+So I will go back over here.
+
+158
+00:08:11,000 --> 00:08:11,000
+Press enter.
+
+159
+00:08:11,000 --> 00:08:15,000
+So I'm inside this particular code block.
+
+160
+00:08:15,000 --> 00:08:18,000
+Now I know that I have to add two variables right.
+
+161
+00:08:18,000 --> 00:08:19,000
+So I will create.
+
+162
+00:08:19,000 --> 00:08:24,000
+One way is that I will create a variable c a plus b okay.
+
+163
+00:08:24,000 --> 00:08:30,000
+And then I can return the c output from that particular function okay.
+
+164
+00:08:30,000 --> 00:08:34,000
+Return c plus c which is nothing but a plus b.
+
+165
+00:08:34,000 --> 00:08:37,000
+Whatever sum is there, we are just going to return it.
+
+166
+00:08:37,000 --> 00:08:43,000
+A better way of writing the code instead of writing C, I can directly write return a plus B, right?
+
+167
+00:08:43,000 --> 00:08:44,000
+So here what we are doing.
+
+168
+00:08:44,000 --> 00:08:47,000
+We're just returning the sum of a and b.
+
+169
+00:08:47,000 --> 00:08:54,000
+Now all I have to do is that create a variable and add call this add function.
+
+170
+00:08:54,000 --> 00:08:56,000
+Here I'm going to give two comma four.
+
+171
+00:08:56,000 --> 00:09:00,000
+Now what is going to get what value result is going to get.
+
+172
+00:09:00,000 --> 00:09:05,000
+As soon as we call this function two comma four it will just return two plus four.
+
+173
+00:09:05,000 --> 00:09:08,000
+Whatever will be the result like six, it will be stored over here.
+
+174
+00:09:08,000 --> 00:09:15,000
+Now if I go ahead and print the result here, you will be able to see that I am able to get the six
+
+175
+00:09:15,000 --> 00:09:16,000
+value.
+
+176
+00:09:16,000 --> 00:09:20,000
+So here you can have any number of parameters and code.
+
+177
+00:09:20,000 --> 00:09:24,000
+Whatever things you are writing, you can basically use this parameter and write any code that you want.
+
+178
+00:09:24,000 --> 00:09:25,000
+Okay.
+
+179
+00:09:25,000 --> 00:09:29,000
+So uh, it is up to you what kind of function that you are building.
+
+180
+00:09:29,000 --> 00:09:34,000
+And as we go ahead with multiple examples, if we see in the future and in the upcoming videos will
+
+181
+00:09:34,000 --> 00:09:39,000
+be writing very complex functions, there is there is something called as decorators lambda function.
+
+182
+00:09:39,000 --> 00:09:41,000
+Many things will be probably coming one by one.
+
+183
+00:09:41,000 --> 00:09:42,000
+We will be learning first.
+
+184
+00:09:42,000 --> 00:09:43,000
+We'll start with basics.
+
+185
+00:09:43,000 --> 00:09:47,000
+Then slowly, slowly will be building the blocks with respect to the learning.
+
+186
+00:09:47,000 --> 00:09:49,000
+And then we will be continuing on.
+
+187
+00:09:49,000 --> 00:09:50,000
+Okay.
+
+188
+00:09:50,000 --> 00:09:56,000
+Now let me just go ahead and show you and talk about one very important thing, which is called as default
+
+189
+00:09:56,000 --> 00:09:57,000
+parameters.
+
+190
+00:09:57,000 --> 00:10:01,000
+We can also provide default parameters within our function.
+
+191
+00:10:01,000 --> 00:10:01,000
+Okay.
+
+192
+00:10:01,000 --> 00:10:03,000
+Now what exactly is default parameters?
+
+193
+00:10:04,000 --> 00:10:09,000
+Let's say I create a function okay I create a function saying as definition.
+
+194
+00:10:09,000 --> 00:10:11,000
+Great okay.
+
+195
+00:10:11,000 --> 00:10:12,000
+Definition.
+
+196
+00:10:12,000 --> 00:10:12,000
+Great.
+
+197
+00:10:12,000 --> 00:10:14,000
+This function is responsible.
+
+198
+00:10:14,000 --> 00:10:18,000
+Uh, let's say I give a name over here.
+
+199
+00:10:18,000 --> 00:10:18,000
+Right.
+
+200
+00:10:18,000 --> 00:10:21,000
+Let's say one parameter is name okay.
+
+201
+00:10:21,000 --> 00:10:24,000
+And here I'm just going to write print.
+
+202
+00:10:25,000 --> 00:10:25,000
+Okay.
+
+203
+00:10:26,000 --> 00:10:34,000
+Uh I'll use the f string and say that okay I want to probably, um, write some information.
+
+204
+00:10:34,000 --> 00:10:37,000
+Let's say I want to say hello.
+
+205
+00:10:37,000 --> 00:10:38,000
+Hello.
+
+206
+00:10:39,000 --> 00:10:41,000
+Whatever the person name is okay.
+
+207
+00:10:41,000 --> 00:10:43,000
+So I'm going to just go ahead and print this okay.
+
+208
+00:10:43,000 --> 00:10:45,000
+And this is what is my definition greet.
+
+209
+00:10:45,000 --> 00:10:49,000
+Greet is just more like a welcoming someone okay.
+
+210
+00:10:49,000 --> 00:10:50,000
+Welcoming someone.
+
+211
+00:10:50,000 --> 00:10:53,000
+Now what I will do is that I will just go ahead.
+
+212
+00:10:54,000 --> 00:10:56,000
+Just go ahead and call this function.
+
+213
+00:10:56,000 --> 00:10:58,000
+So I will go ahead and write, greet.
+
+214
+00:10:58,000 --> 00:11:01,000
+And let me say that Krish has entered somewhere.
+
+215
+00:11:01,000 --> 00:11:05,000
+So I will just give the Krish parameter like let's say you are entering a restaurant and soon as you
+
+216
+00:11:05,000 --> 00:11:12,000
+write Krish over there in one of the application and suddenly I will get a message saying that.
+
+217
+00:11:12,000 --> 00:11:12,000
+Hello Krish.
+
+218
+00:11:12,000 --> 00:11:13,000
+Okay.
+
+219
+00:11:13,000 --> 00:11:15,000
+Or welcome something like this.
+
+220
+00:11:15,000 --> 00:11:19,000
+Welcome to the Paradise.
+
+221
+00:11:19,000 --> 00:11:21,000
+Let's say this is my message.
+
+222
+00:11:21,000 --> 00:11:22,000
+Hello, Krish.
+
+223
+00:11:22,000 --> 00:11:23,000
+Welcome to the Paradise.
+
+224
+00:11:23,000 --> 00:11:28,000
+So as soon as I give this parameter automatically, this will get replaced over here.
+
+225
+00:11:28,000 --> 00:11:28,000
+Okay.
+
+226
+00:11:29,000 --> 00:11:33,000
+Now I may also give one parameter.
+
+227
+00:11:33,000 --> 00:11:36,000
+I may also give some parameters with a default value.
+
+228
+00:11:36,000 --> 00:11:36,000
+Okay.
+
+229
+00:11:36,000 --> 00:11:38,000
+With a default value.
+
+230
+00:11:38,000 --> 00:11:39,000
+Now what does that particular mean?
+
+231
+00:11:39,000 --> 00:11:39,000
+Okay.
+
+232
+00:11:40,000 --> 00:11:47,000
+Let's say I just go over here and this time I don't give Krish okay I'll just try to execute this without
+
+233
+00:11:47,000 --> 00:11:49,000
+giving any parameter.
+
+234
+00:11:49,000 --> 00:11:51,000
+So here you can see I will be getting an error.
+
+235
+00:11:51,000 --> 00:11:54,000
+Hey greet missing one requirement positional argument.
+
+236
+00:11:54,000 --> 00:11:54,000
+Okay.
+
+237
+00:11:54,000 --> 00:11:56,000
+We'll talk about what exactly is positional argument.
+
+238
+00:11:56,000 --> 00:11:57,000
+More about it.
+
+239
+00:11:57,000 --> 00:12:02,000
+But here you can see that I have given this particular, uh, name parameter over here, but I have
+
+240
+00:12:02,000 --> 00:12:04,000
+not given any parameter when I'm calling it.
+
+241
+00:12:04,000 --> 00:12:06,000
+And that is the reason I'm getting this one.
+
+242
+00:12:06,000 --> 00:12:08,000
+Missing one required positional argument.
+
+243
+00:12:08,000 --> 00:12:08,000
+Okay.
+
+244
+00:12:08,000 --> 00:12:14,000
+Now, in order to solve this problem, what I can do, I will say, since I'm not giving the name,
+
+245
+00:12:14,000 --> 00:12:17,000
+I may give a default value to the name.
+
+246
+00:12:17,000 --> 00:12:21,000
+Let's say if I'm not giving it over here, then what will happen?
+
+247
+00:12:21,000 --> 00:12:21,000
+It will.
+
+248
+00:12:21,000 --> 00:12:26,000
+First of all, go and see whether, uh, the greet name is equal to guest is given or not.
+
+249
+00:12:27,000 --> 00:12:32,000
+Now, if I go ahead and execute this, see, I'm not giving any parameter but the default parameter,
+
+250
+00:12:32,000 --> 00:12:34,000
+it will take it as guest.
+
+251
+00:12:34,000 --> 00:12:34,000
+Okay.
+
+252
+00:12:34,000 --> 00:12:37,000
+So if I go ahead and execute it here you can see.
+
+253
+00:12:37,000 --> 00:12:37,000
+Hello guest.
+
+254
+00:12:37,000 --> 00:12:39,000
+Welcome to the Paradise.
+
+255
+00:12:39,000 --> 00:12:42,000
+Let's say if I go ahead and give the name okay.
+
+256
+00:12:42,000 --> 00:12:45,000
+Over here, let's say the guest is not interested to give the name.
+
+257
+00:12:45,000 --> 00:12:47,000
+So by default it will take it as guest.
+
+258
+00:12:47,000 --> 00:12:49,000
+But if I'm giving my name, it will just replace.
+
+259
+00:12:49,000 --> 00:12:51,000
+The guest will get replaced with crush.
+
+260
+00:12:51,000 --> 00:12:57,000
+Okay, so this is, uh, some good example with respect to the default parameters.
+
+261
+00:12:57,000 --> 00:12:59,000
+And this is how you can also assign default parameters.
+
+262
+00:13:00,000 --> 00:13:05,000
+Now we are going to discuss about the main topic which you will be seeing in function.
+
+263
+00:13:05,000 --> 00:13:09,000
+That is nothing but variable length.
+
+264
+00:13:11,000 --> 00:13:14,000
+Length arguments.
+
+265
+00:13:14,000 --> 00:13:14,000
+Okay.
+
+266
+00:13:15,000 --> 00:13:19,000
+Now in the variable length arguments here, we are going to discuss about two things.
+
+267
+00:13:19,000 --> 00:13:24,000
+One is positional and keyword argument okay.
+
+268
+00:13:25,000 --> 00:13:27,000
+Positional and keyword argument okay.
+
+269
+00:13:28,000 --> 00:13:29,000
+Keywords.
+
+270
+00:13:30,000 --> 00:13:31,000
+Arguments.
+
+271
+00:13:32,000 --> 00:13:37,000
+Okay, now let me do let me tell you one very important thing.
+
+272
+00:13:37,000 --> 00:13:41,000
+Let's say that I have in a function many, many parameters as such.
+
+273
+00:13:41,000 --> 00:13:42,000
+Okay.
+
+274
+00:13:42,000 --> 00:13:48,000
+And let me just define one simple function that is called as definition print.
+
+275
+00:13:49,000 --> 00:13:52,000
+Underscore numbers okay.
+
+276
+00:13:52,000 --> 00:13:58,000
+And here inside this let's say I have like this okay.
+
+277
+00:13:58,000 --> 00:14:00,000
+Number one, number two, number three.
+
+278
+00:14:00,000 --> 00:14:01,000
+Number four.
+
+279
+00:14:01,000 --> 00:14:02,000
+Number five.
+
+280
+00:14:02,000 --> 00:14:04,000
+Like this I have many, many parameters.
+
+281
+00:14:04,000 --> 00:14:05,000
+In short okay.
+
+282
+00:14:05,000 --> 00:14:12,000
+It's just not one single parameter I can I am basically having many, many, many, many parameters.
+
+283
+00:14:12,000 --> 00:14:12,000
+Okay.
+
+284
+00:14:12,000 --> 00:14:17,000
+So what I will do instead of just writing all the parameter names, right?
+
+285
+00:14:17,000 --> 00:14:23,000
+I will use one very simple positional argument which we denote it as star args.
+
+286
+00:14:24,000 --> 00:14:26,000
+Okay, now it is not necessary.
+
+287
+00:14:26,000 --> 00:14:27,000
+You need to write star args.
+
+288
+00:14:27,000 --> 00:14:29,000
+I can go ahead and write star Chris also.
+
+289
+00:14:29,000 --> 00:14:32,000
+Okay, uh, but it is always a good practice.
+
+290
+00:14:32,000 --> 00:14:34,000
+What is followed throughout the entire world?
+
+291
+00:14:34,000 --> 00:14:36,000
+The same practice we should also do.
+
+292
+00:14:36,000 --> 00:14:39,000
+Now, in this particular case, I will just show you it Star Crush.
+
+293
+00:14:39,000 --> 00:14:42,000
+Then, uh, we will go ahead and write with the documentation.
+
+294
+00:14:42,000 --> 00:14:46,000
+Like what is the best practices argument we've specifically used?
+
+295
+00:14:46,000 --> 00:14:50,000
+Like positional argument is basically given by star args.
+
+296
+00:14:50,000 --> 00:14:53,000
+As I said, it need not be args.
+
+297
+00:14:53,000 --> 00:14:54,000
+I can also write crush.
+
+298
+00:14:54,000 --> 00:14:58,000
+Okay, now I will go ahead and go ahead inside this particular function.
+
+299
+00:14:58,000 --> 00:15:00,000
+Now here what I will do.
+
+300
+00:15:00,000 --> 00:15:04,000
+As you know, the star crush will be having multiple parameters.
+
+301
+00:15:04,000 --> 00:15:10,000
+So I what I will do, I will just go ahead and write four numbers in crush.
+
+302
+00:15:10,000 --> 00:15:10,000
+Okay.
+
+303
+00:15:10,000 --> 00:15:12,000
+Which is my argument.
+
+304
+00:15:12,000 --> 00:15:16,000
+I will go ahead and print numbers okay okay.
+
+305
+00:15:16,000 --> 00:15:18,000
+I will go ahead and print number okay.
+
+306
+00:15:18,000 --> 00:15:19,000
+Now see this okay.
+
+307
+00:15:20,000 --> 00:15:21,000
+So this becomes my function.
+
+308
+00:15:21,000 --> 00:15:23,000
+Please observe very carefully okay.
+
+309
+00:15:23,000 --> 00:15:27,000
+Now my print underscore numbers function.
+
+310
+00:15:27,000 --> 00:15:33,000
+When I'm calling let's say I have one comma two comma three comma four comma five comma six comma crush.
+
+311
+00:15:33,000 --> 00:15:35,000
+It can be anything okay.
+
+312
+00:15:35,000 --> 00:15:37,000
+So these are all the parameters that I have.
+
+313
+00:15:37,000 --> 00:15:39,000
+You can see it is a set of parameters.
+
+314
+00:15:39,000 --> 00:15:43,000
+And this parameters are basically called as positional arguments okay.
+
+315
+00:15:43,000 --> 00:15:46,000
+Positional arguments one after the other.
+
+316
+00:15:46,000 --> 00:15:47,000
+Now if I go ahead and execute.
+
+317
+00:15:47,000 --> 00:15:48,000
+Now see the magic.
+
+318
+00:15:48,000 --> 00:15:53,000
+This all the parameters will be referenced by Star Crush okay.
+
+319
+00:15:53,000 --> 00:15:57,000
+So crush will be a variable which will be referring all this particular positional arguments.
+
+320
+00:15:57,000 --> 00:16:02,000
+Now if I go ahead and execute it now clearly here you can see for all the numbers it is being able to
+
+321
+00:16:02,000 --> 00:16:07,000
+iterate through this right 1234 and it is displaying it something like this okay.
+
+322
+00:16:07,000 --> 00:16:09,000
+Because here I just used one.
+
+323
+00:16:09,000 --> 00:16:13,000
+So this star crush is basically referring to all the positional arguments, right?
+
+324
+00:16:13,000 --> 00:16:17,000
+Positional arguments basically means all the arguments that is given over here.
+
+325
+00:16:17,000 --> 00:16:17,000
+Okay.
+
+326
+00:16:17,000 --> 00:16:24,000
+Now as I always said, the best practice would be I will go ahead and write this and I will say args.
+
+327
+00:16:24,000 --> 00:16:24,000
+Okay.
+
+328
+00:16:24,000 --> 00:16:28,000
+So args is a kind of argument positional argument that we basically use.
+
+329
+00:16:28,000 --> 00:16:29,000
+Okay.
+
+330
+00:16:29,000 --> 00:16:33,000
+So here I'm going to write positional arguments okay.
+
+331
+00:16:34,000 --> 00:16:38,000
+Why it is important because I may have many number of arguments over there okay.
+
+332
+00:16:38,000 --> 00:16:41,000
+So I may directly use this specific thing okay.
+
+333
+00:16:41,000 --> 00:16:46,000
+Now the other thing will be that okay this is fine if I go ahead and execute it.
+
+334
+00:16:46,000 --> 00:16:50,000
+And if I execute the same thing, okay, I will be able to get the same answer.
+
+335
+00:16:50,000 --> 00:16:51,000
+Fine.
+
+336
+00:16:51,000 --> 00:16:51,000
+Perfect.
+
+337
+00:16:51,000 --> 00:16:53,000
+123456 crush.
+
+338
+00:16:53,000 --> 00:17:00,000
+Now there is also one more important function which is called as keyword argument.
+
+339
+00:17:02,000 --> 00:17:02,000
+Okay.
+
+340
+00:17:02,000 --> 00:17:04,000
+Now, what exactly is keyword argument?
+
+341
+00:17:04,000 --> 00:17:04,000
+Okay.
+
+342
+00:17:05,000 --> 00:17:09,000
+Um, let me just go ahead and create, uh, one more function.
+
+343
+00:17:09,000 --> 00:17:09,000
+Okay.
+
+344
+00:17:09,000 --> 00:17:16,000
+Let's say I will go ahead and write, uh, print uh sorry definition print underscore detail.
+
+345
+00:17:16,000 --> 00:17:22,000
+Now how it is different from positional argument you'll be able to understand keyword argument is given
+
+346
+00:17:22,000 --> 00:17:23,000
+by double star.
+
+347
+00:17:24,000 --> 00:17:26,000
+And you can write any parameter that you have.
+
+348
+00:17:26,000 --> 00:17:34,000
+So usually the best uh practice that is basically used is k w a r g s k w basically means keyword argument,
+
+349
+00:17:34,000 --> 00:17:34,000
+right?
+
+350
+00:17:34,000 --> 00:17:37,000
+ARGs is a simple positional argument.
+
+351
+00:17:37,000 --> 00:17:40,000
+Now inside this let me do one thing.
+
+352
+00:17:41,000 --> 00:17:45,000
+One thing that you really need to remember in keyword argument.
+
+353
+00:17:45,000 --> 00:17:51,000
+All the keys or all the parameters will be in the form of key value pair.
+
+354
+00:17:51,000 --> 00:17:54,000
+Okay, again, I'm repeating it in keyword arguments.
+
+355
+00:17:54,000 --> 00:18:00,000
+All the parameters will be in the form of key value arguments like key value pairs.
+
+356
+00:18:00,000 --> 00:18:04,000
+Now you know if it is in the form of key value pairs.
+
+357
+00:18:04,000 --> 00:18:08,000
+That basically means you'll be able to access this like how we access dictionaries.
+
+358
+00:18:08,000 --> 00:18:22,000
+So I may go ahead and write uh for key comma value in k w a r g s dot items right dot items right.
+
+359
+00:18:22,000 --> 00:18:27,000
+If I go ahead and execute this now, what will happen if I go ahead and print it so it will be nothing
+
+360
+00:18:27,000 --> 00:18:28,000
+but f.
+
+361
+00:18:31,000 --> 00:18:31,000
+Key.
+
+362
+00:18:33,000 --> 00:18:34,000
+Colon.
+
+363
+00:18:36,000 --> 00:18:37,000
+Value, right?
+
+364
+00:18:37,000 --> 00:18:39,000
+So I'll just go ahead and execute this.
+
+365
+00:18:39,000 --> 00:18:41,000
+Now how do we provide a keyword argument.
+
+366
+00:18:41,000 --> 00:18:42,000
+It's very simple.
+
+367
+00:18:42,000 --> 00:18:46,000
+Let's say I want to just go ahead and print, uh, these details.
+
+368
+00:18:46,000 --> 00:18:49,000
+Let's say my first parameter is nothing but name.
+
+369
+00:18:49,000 --> 00:18:50,000
+Okay.
+
+370
+00:18:50,000 --> 00:18:59,000
+I've not defined it anywhere but but during runtime I'm just giving name crush age 32 and let's say,
+
+371
+00:18:59,000 --> 00:19:01,000
+uh, city or country.
+
+372
+00:19:01,000 --> 00:19:02,000
+I'll go ahead and write.
+
+373
+00:19:02,000 --> 00:19:04,000
+Country is nothing but India.
+
+374
+00:19:04,000 --> 00:19:12,000
+Okay, now, if I go ahead and print all these details so directly, see in if all my values is in the
+
+375
+00:19:12,000 --> 00:19:18,000
+form of key value pair, where I'm using a key name, I'm using a value name, key value key value.
+
+376
+00:19:18,000 --> 00:19:25,000
+So all these parameters will be referenced by star star kW args okay.
+
+377
+00:19:25,000 --> 00:19:27,000
+Star star kW args.
+
+378
+00:19:28,000 --> 00:19:34,000
+If all the parameters are just written like this where it does not have any key name, then this basically
+
+379
+00:19:34,000 --> 00:19:36,000
+becomes a positional argument.
+
+380
+00:19:36,000 --> 00:19:41,000
+Okay, now let's combine both of them and let's see how things work right now okay.
+
+381
+00:19:41,000 --> 00:19:44,000
+So I will just go ahead and write definition okay.
+
+382
+00:19:44,000 --> 00:19:47,000
+And how do I specify my positional key argument.
+
+383
+00:19:47,000 --> 00:19:49,000
+Nothing but star args.
+
+384
+00:19:49,000 --> 00:19:51,000
+So this will be my first parameter.
+
+385
+00:19:51,000 --> 00:19:52,000
+This will be my second parameter.
+
+386
+00:19:52,000 --> 00:19:55,000
+Now in my first parameter I will go ahead and write.
+
+387
+00:19:55,000 --> 00:19:57,000
+And let me just go ahead and display this.
+
+388
+00:19:57,000 --> 00:20:02,000
+And for ARGs I'm just going to display this values okay.
+
+389
+00:20:02,000 --> 00:20:05,000
+Let's say I'll not take numbers because I can display anything right.
+
+390
+00:20:05,000 --> 00:20:09,000
+For val in args print Val okay.
+
+391
+00:20:09,000 --> 00:20:15,000
+Uh, and here also what I'm going to do just to make it much more better, I'm going to use this f string.
+
+392
+00:20:15,000 --> 00:20:19,000
+And here I'm just going to use this indication.
+
+393
+00:20:20,000 --> 00:20:22,000
+And I'm going to right over here.
+
+394
+00:20:22,000 --> 00:20:22,000
+Right.
+
+395
+00:20:22,000 --> 00:20:27,000
+So what I've done over here for val in a args print val okay.
+
+396
+00:20:27,000 --> 00:20:31,000
+For key comma value in kW a args dot items key.
+
+397
+00:20:31,000 --> 00:20:33,000
+We're just going to print this.
+
+398
+00:20:33,000 --> 00:20:40,000
+Now the best way is that I will go ahead and write over here something like positional argument argument
+
+399
+00:20:40,000 --> 00:20:41,000
+okay.
+
+400
+00:20:41,000 --> 00:20:42,000
+And this will be my value.
+
+401
+00:20:42,000 --> 00:20:47,000
+Now see now I'm using both of them right now how this function is able to identify.
+
+402
+00:20:47,000 --> 00:20:47,000
+Right.
+
+403
+00:20:47,000 --> 00:20:50,000
+Let's say I'm giving print underscore detail.
+
+404
+00:20:50,000 --> 00:20:53,000
+Let's say I give my positional arguments like 12345 okay.
+
+405
+00:20:53,000 --> 00:20:56,000
+And here I will go ahead and write crash okay.
+
+406
+00:20:56,000 --> 00:21:03,000
+So this basically becomes my positional all the positional arguments uh, and between them I will just
+
+407
+00:21:03,000 --> 00:21:09,000
+go ahead and give this keyword argument, let's say go ahead and give it anywhere anywhere that you
+
+408
+00:21:09,000 --> 00:21:09,000
+want to give.
+
+409
+00:21:09,000 --> 00:21:10,000
+Okay.
+
+410
+00:21:10,000 --> 00:21:14,000
+Now out of all these parameters it will be able to identify okay.
+
+411
+00:21:14,000 --> 00:21:17,000
+Let's see what is the error that is probably coming over here.
+
+412
+00:21:18,000 --> 00:21:21,000
+Positional argument cannot up uh appear after keyword argument.
+
+413
+00:21:21,000 --> 00:21:22,000
+See this is the error.
+
+414
+00:21:23,000 --> 00:21:26,000
+Now the main problem over here when we write like this right.
+
+415
+00:21:26,000 --> 00:21:31,000
+First of all always remember we need to specify all my positional key arguments.
+
+416
+00:21:31,000 --> 00:21:32,000
+Now I will go ahead and write my keyword argument.
+
+417
+00:21:32,000 --> 00:21:35,000
+Now if I go ahead and execute the details.
+
+418
+00:21:35,000 --> 00:21:40,000
+See initially first argument is positional argument second third fourth.
+
+419
+00:21:40,000 --> 00:21:44,000
+Till here and this is all that you'll be able to see is my keyword argument.
+
+420
+00:21:44,000 --> 00:21:50,000
+So this is very much important to understand the differences between positional and keyword argument.
+
+421
+00:21:50,000 --> 00:21:55,000
+In keyword argument you have all the parameters in key value pairs, like how we have specified over
+
+422
+00:21:55,000 --> 00:21:57,000
+here in positional.
+
+423
+00:21:57,000 --> 00:22:00,000
+You just have uh, something like one, two, three, four, five.
+
+424
+00:22:00,000 --> 00:22:04,000
+With respect to only the names that will be there will not be assigning any key names.
+
+425
+00:22:04,000 --> 00:22:05,000
+Right.
+
+426
+00:22:05,000 --> 00:22:10,000
+So this is the most important thing with respect to keyword and positional arguments.
+
+427
+00:22:10,000 --> 00:22:12,000
+I hope you were able to understand.
+
+428
+00:22:12,000 --> 00:22:14,000
+I hope you are able to understand the difference between them.
+
+429
+00:22:14,000 --> 00:22:19,000
+And it is very much important if you know this, because next, uh, in the upcoming session you'll
+
+430
+00:22:19,000 --> 00:22:24,000
+be seeing, I'll be defining functions where I'll be having multiple parameters over there, and then
+
+431
+00:22:24,000 --> 00:22:25,000
+we will also be seeing that.
+
+432
+00:22:25,000 --> 00:22:25,000
+Okay.
+
+433
+00:22:26,000 --> 00:22:32,000
+Now, uh, let's talk about the last topic for this video that is called as return statement.
+
+434
+00:22:32,000 --> 00:22:34,000
+And I hope I've already spoken about it.
+
+435
+00:22:34,000 --> 00:22:43,000
+In return statement, our function returns something right after the entire statement is executed.
+
+436
+00:22:43,000 --> 00:22:43,000
+Right.
+
+437
+00:22:43,000 --> 00:22:44,000
+So let me just go ahead and do it.
+
+438
+00:22:44,000 --> 00:22:47,000
+So here I am going to create my multiply function.
+
+439
+00:22:48,000 --> 00:22:49,000
+This will be a comma b.
+
+440
+00:22:49,000 --> 00:22:53,000
+And here I'll just go ahead and return a multiplied by b.
+
+441
+00:22:53,000 --> 00:22:54,000
+Right.
+
+442
+00:22:54,000 --> 00:22:59,000
+So here we are returning some value after the function is getting executed now in order to execute it.
+
+443
+00:22:59,000 --> 00:23:02,000
+So I will go go ahead and define my multiply function.
+
+444
+00:23:02,000 --> 00:23:04,000
+Let's go ahead and write two comma three.
+
+445
+00:23:04,000 --> 00:23:06,000
+And finally I get my output.
+
+446
+00:23:06,000 --> 00:23:09,000
+So functions can return multiple values.
+
+447
+00:23:09,000 --> 00:23:13,000
+Also let's see whether this function will be able to return multiple value or not.
+
+448
+00:23:13,000 --> 00:23:13,000
+Right.
+
+449
+00:23:13,000 --> 00:23:16,000
+So let's say I will write c is equal to uh.
+
+450
+00:23:16,000 --> 00:23:20,000
+Or let me just define this function once again okay.
+
+451
+00:23:20,000 --> 00:23:22,000
+And let me execute it over here.
+
+452
+00:23:22,000 --> 00:23:28,000
+So here I will say hey return a comma B comma a.
+
+453
+00:23:28,000 --> 00:23:28,000
+Okay.
+
+454
+00:23:28,000 --> 00:23:31,000
+Let's see whether we'll be able to return this.
+
+455
+00:23:31,000 --> 00:23:35,000
+So in Python a function can also return multiple values.
+
+456
+00:23:35,000 --> 00:23:38,000
+So here we are returning a comma b comma a a comma b is nothing.
+
+457
+00:23:38,000 --> 00:23:40,000
+But uh let's say we two comma three have given.
+
+458
+00:23:40,000 --> 00:23:43,000
+So two comma three is six multiply.
+
+459
+00:23:43,000 --> 00:23:45,000
+When we are doing it is six and a value is two.
+
+460
+00:23:45,000 --> 00:23:48,000
+So we can also return multiple statements.
+
+461
+00:23:48,000 --> 00:23:50,000
+Uh um sorry multiple parameters.
+
+462
+00:23:51,000 --> 00:23:58,000
+Uh multiple multiple parameters uh from a function.
+
+463
+00:23:58,000 --> 00:23:58,000
+Okay.
+
+464
+00:23:58,000 --> 00:24:02,000
+And that is what we basically use, we need to use this return variable.
+
+465
+00:24:03,000 --> 00:24:05,000
+So I hope you are able to understand this.
+
+466
+00:24:05,000 --> 00:24:06,000
+This was it for my side.
+
+467
+00:24:06,000 --> 00:24:08,000
+This was all about functions.
+
+468
+00:24:08,000 --> 00:24:12,000
+In the upcoming session we are going to learn more many amazing things about function.
+
+469
+00:24:12,000 --> 00:24:15,000
+Uh, there are many things like lambda function, nested function, high order function.
+
+470
+00:24:15,000 --> 00:24:17,000
+We will be discussing about them.
+
+471
+00:24:17,000 --> 00:24:18,000
+So yes, this was it.
+
+472
+00:24:18,000 --> 00:24:21,000
+I will see you all in the next video.
+
+473
+00:24:21,000 --> 00:24:21,000
+Thank you.
+
